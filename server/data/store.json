@@ -1,0 +1,373 @@
+{
+  "workshops": [
+    {
+      "_id": "workshop-bigdata-2026",
+      "workshopName": "Next Gen Big Data & Hadoop",
+      "institutionName": "RajaRajeswari College of Engineering (RRCE)",
+      "department": "Information Science and Engineering",
+      "presenterName": "Mr. Sankar K, CEO – Tekzow and Tekzow Academy",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "certificateTemplatePath": "templates/Certificate RRCE (1).pptx",
+      "isActive": true,
+      "createdAt": "2026-10-01T00:00:00.000Z"
+    }
+  ],
+  "admins": [
+    {
+      "_id": "admin-01",
+      "name": "RRCE Admin",
+      "email": "admin@rrce.org",
+      "passwordHash": "$2b$10$/ReCiScV8Sgd8srR/pXr3ey6goyf4p7qNWAFikcf71jabgG50NA5S",
+      "role": "SUPER_ADMIN",
+      "createdAt": "2026-11-13T18:36:49.438Z"
+    },
+    {
+      "_id": "admin-02",
+      "name": "Tekzow Admin",
+      "email": "admin@tekzow.com",
+      "passwordHash": "$2b$10$wUqF8Hh.LVdvOzrvK/y9vuTITxJv7wPtBYRtbGvK88QSoGdhD/6/e",
+      "role": "ADMIN",
+      "createdAt": "2026-11-13T18:36:49.696Z"
+    }
+  ],
+  "students": [
+    {
+      "_id": "std_b7c5f736",
+      "studentName": "Arun Kumar M",
+      "usn": "1RR23IS004",
+      "department": "Information Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "arun.k@rrce.org",
+      "mobile": "9845123456",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-13T13:36:52.544Z",
+      "updatedAt": "2026-11-13T13:36:52.544Z"
+    },
+    {
+      "_id": "std_e7298a44",
+      "studentName": "Bhavana R",
+      "usn": "1RR23CS012",
+      "department": "Computer Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "bhavana.r@rrce.org",
+      "mobile": "9845234567",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-13T14:36:52.544Z",
+      "updatedAt": "2026-11-13T14:36:52.544Z"
+    },
+    {
+      "_id": "std_837f848c",
+      "studentName": "Chandan Gowda",
+      "usn": "1RR23EC021",
+      "department": "Electronics and Communication Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "chandan.g@rrce.org",
+      "mobile": "9845345678",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-13T15:36:52.545Z",
+      "updatedAt": "2026-11-13T15:36:52.545Z"
+    },
+    {
+      "_id": "std_d608c440",
+      "studentName": "Divya S",
+      "usn": "1RR23IS028",
+      "department": "Information Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "divya.s@rrce.org",
+      "mobile": "9845456789",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-13T16:36:52.545Z",
+      "updatedAt": "2026-11-13T16:36:52.545Z"
+    },
+    {
+      "_id": "std_792fa69d",
+      "studentName": "Karthik N",
+      "usn": "1RR23ME015",
+      "department": "Mechanical Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "karthik.n@rrce.org",
+      "mobile": "9845567890",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-13T17:36:52.545Z",
+      "updatedAt": "2026-11-13T17:36:52.545Z"
+    },
+    {
+      "_id": "std_3016081f",
+      "studentName": "Chandana S",
+      "usn": "1RR23IS015",
+      "department": "Information Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "chandana.s@rrce.org",
+      "mobile": "9845998877",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-14T11:24:11.543Z",
+      "updatedAt": "2026-11-14T11:24:11.543Z"
+    },
+    {
+      "_id": "std_2c83f4a8",
+      "studentName": "sankar",
+      "usn": "1234567890",
+      "department": "Information Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "tekzowdevelopers@gmail.com",
+      "mobile": "1234567890",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-14T11:27:55.868Z",
+      "updatedAt": "2026-11-14T11:27:55.869Z"
+    },
+    {
+      "_id": "std_be298d25",
+      "studentName": "Tekzow Developers",
+      "usn": "4567890`6",
+      "department": "Information Science and Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "tekzowdevelopers@gmail.com",
+      "mobile": "9345895210",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-14T12:10:59.402Z",
+      "updatedAt": "2026-11-14T12:10:59.402Z"
+    },
+    {
+      "_id": "std_67b8660d",
+      "studentName": "Akshay",
+      "usn": "SPK4535672",
+      "department": "Electrical and Electronics Engineering",
+      "collegeName": "RajaRajeswari College of Engineering",
+      "email": "tekzowdevelopers@gmail.com",
+      "mobile": "9345890000",
+      "workshopId": "workshop-bigdata-2026",
+      "createdAt": "2026-11-14T12:38:42.546Z",
+      "updatedAt": "2026-11-14T12:38:42.546Z"
+    }
+  ],
+  "feedbacks": [
+    {
+      "_id": "fb_9c120590",
+      "studentId": "std_b7c5f736",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Very Good",
+      "practicalRating": "Excellent",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Practical Sessions",
+      "suggestions": "Great hands-on experience with Hadoop clusters!",
+      "submittedAt": "2026-11-13T13:36:52.544Z"
+    },
+    {
+      "_id": "fb_cc1213db",
+      "studentId": "std_e7298a44",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Very Good",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Very Good",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Trainer Explanation",
+      "suggestions": "Mr. Sankar explained HDFS architecture very clearly.",
+      "submittedAt": "2026-11-13T14:36:52.545Z"
+    },
+    {
+      "_id": "fb_5472ead7",
+      "studentId": "std_837f848c",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Very Good",
+      "conceptRating": "Excellent",
+      "practicalRating": "Good",
+      "academicRelevance": "Relevant",
+      "learningOutcome": "Yes, somewhat",
+      "recommendation": "Maybe",
+      "likedMost": "Technical Concepts",
+      "suggestions": "Would love more exercises on MapReduce coding.",
+      "submittedAt": "2026-11-13T15:36:52.545Z"
+    },
+    {
+      "_id": "fb_7262ec52",
+      "studentId": "std_d608c440",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Excellent",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Real-World Applications",
+      "suggestions": "Tekzow academy trainer provided real enterprise industry cases.",
+      "submittedAt": "2026-11-13T16:36:52.545Z"
+    },
+    {
+      "_id": "fb_867b8846",
+      "studentId": "std_792fa69d",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Good",
+      "trainerRating": "Very Good",
+      "conceptRating": "Good",
+      "practicalRating": "Good",
+      "academicRelevance": "Relevant",
+      "learningOutcome": "Yes, somewhat",
+      "recommendation": "Definitely",
+      "likedMost": "Overall Experience",
+      "suggestions": "Informative workshop for non-CS students exploring big data.",
+      "submittedAt": "2026-11-13T17:36:52.545Z"
+    },
+    {
+      "_id": "fb_60e32ccc",
+      "studentId": "std_3016081f",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Very Good",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Practical Sessions",
+      "suggestions": "The practical demonstration of Hadoop clusters and HDFS was superb!",
+      "submittedAt": "2026-11-14T11:24:11.572Z"
+    },
+    {
+      "_id": "fb_90bcc797",
+      "studentId": "std_2c83f4a8",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Very Good",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Practical Sessions",
+      "suggestions": "zazxcvbg",
+      "submittedAt": "2026-11-14T11:27:56.124Z"
+    },
+    {
+      "_id": "fb_54c14f3f",
+      "studentId": "std_be298d25",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Very Good",
+      "academicRelevance": "Very Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Practical Sessions",
+      "suggestions": "zsxc",
+      "submittedAt": "2026-11-14T12:10:59.425Z"
+    },
+    {
+      "_id": "fb_6c5455ef",
+      "studentId": "std_67b8660d",
+      "workshopId": "workshop-bigdata-2026",
+      "overallRating": "Excellent",
+      "trainerRating": "Excellent",
+      "conceptRating": "Excellent",
+      "practicalRating": "Very Good",
+      "academicRelevance": "Relevant",
+      "learningOutcome": "Yes, significantly",
+      "recommendation": "Definitely",
+      "likedMost": "Practical Sessions",
+      "suggestions": "ewsfd",
+      "submittedAt": "2026-11-14T12:38:42.647Z"
+    }
+  ],
+  "certificates": [
+    {
+      "_id": "cert_bf274bfc",
+      "studentId": "std_b7c5f736",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0001",
+      "fileName": "RRCE_Workshop_Certificate_1RR23IS004.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-13T13:36:52.544Z"
+    },
+    {
+      "_id": "cert_065a4562",
+      "studentId": "std_e7298a44",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0002",
+      "fileName": "RRCE_Workshop_Certificate_1RR23CS012.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-13T14:36:52.545Z"
+    },
+    {
+      "_id": "cert_bb17959e",
+      "studentId": "std_837f848c",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0003",
+      "fileName": "RRCE_Workshop_Certificate_1RR23EC021.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-13T15:36:52.545Z"
+    },
+    {
+      "_id": "cert_cf457fe8",
+      "studentId": "std_d608c440",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0004",
+      "fileName": "RRCE_Workshop_Certificate_1RR23IS028.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-13T16:36:52.545Z"
+    },
+    {
+      "_id": "cert_6d5c88e4",
+      "studentId": "std_792fa69d",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0005",
+      "fileName": "RRCE_Workshop_Certificate_1RR23ME015.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-13T17:36:52.545Z"
+    },
+    {
+      "_id": "cert_b32179b8",
+      "studentId": "std_3016081f",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0006",
+      "fileName": "RRCE_Workshop_Certificate_1RR23IS015.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-14T11:24:11.595Z"
+    },
+    {
+      "_id": "cert_9d5c79c5",
+      "studentId": "std_2c83f4a8",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0007",
+      "fileName": "RRCE_Workshop_Certificate_1234567890.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-14T11:27:56.182Z"
+    },
+    {
+      "_id": "cert_66076501",
+      "studentId": "std_be298d25",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0008",
+      "fileName": "RRCE_Workshop_Certificate_4567890`6.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-14T12:10:59.446Z"
+    },
+    {
+      "_id": "cert_c3fb3561",
+      "studentId": "std_67b8660d",
+      "workshopId": "workshop-bigdata-2026",
+      "certificateNumber": "RRCE-BDH-2026-0009",
+      "fileName": "RRCE_Workshop_Certificate_SPK4535672.pdf",
+      "filePath": "",
+      "generationStatus": "Generated",
+      "generatedAt": "2026-11-14T12:38:42.683Z"
+    }
+  ]
+}
