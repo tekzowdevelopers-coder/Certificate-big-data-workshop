@@ -26,8 +26,11 @@ app.use(express.json());
 app.use('/assets', express.static(path.join(__dirname, '../templates/assets')));
 
 // Serve production frontend if built
+const rootDistPath = path.join(__dirname, '../dist');
 const clientDistPath = path.join(__dirname, '../client/dist');
-if (fs.existsSync(clientDistPath)) {
+if (fs.existsSync(rootDistPath)) {
+  app.use(express.static(rootDistPath));
+} else if (fs.existsSync(clientDistPath)) {
   app.use(express.static(clientDistPath));
 }
 
@@ -628,9 +631,11 @@ app.get('/api/admin/certificates', authenticateAdmin, async (req, res) => {
 
 // Fallback wildcard to index.html for SPA client routing (Express 5 compatible)
 app.use((req, res) => {
-  const indexPath = path.join(__dirname, '../client/dist/index.html');
-  if (fs.existsSync(indexPath)) {
-    res.sendFile(indexPath);
+  const p1 = path.join(__dirname, '../dist/index.html');
+  const p2 = path.join(__dirname, '../client/dist/index.html');
+  const target = fs.existsSync(p1) ? p1 : (fs.existsSync(p2) ? p2 : null);
+  if (target) {
+    res.sendFile(target);
   } else {
     res.status(404).send('API endpoint not found. Please build the client or run frontend on port 5173.');
   }
