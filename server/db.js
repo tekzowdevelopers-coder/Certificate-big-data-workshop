@@ -248,6 +248,8 @@ function writeStore(data) {
 // -----------------------------------------------------------------------------
 // UNIFIED DATABASE ADAPTER (Switches automatically between MongoDB & Fallback)
 // -----------------------------------------------------------------------------
+export const initDatabase = connectToDatabase;
+
 export const db = {
   // WORKSHOP
   async getActiveWorkshop() {

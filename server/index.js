@@ -6,7 +6,7 @@ import bcrypt from 'bcryptjs';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { initDatabase, db } from './db.js';
+import { connectToDatabase, db } from './db.js';
 import { generatePdfCertificate, generatePptxCertificate } from './certGenerator.js';
 
 dotenv.config();
@@ -638,6 +638,7 @@ app.use((req, res) => {
 
 // Initialize DB and launch server (when run locally)
 async function start() {
+  await connectToDatabase();
   await db.seedDemoDataIfEmpty();
 
   app.listen(PORT, () => {
