@@ -636,9 +636,8 @@ app.use((req, res) => {
   }
 });
 
-// Initialize DB and launch server
+// Initialize DB and launch server (when run locally)
 async function start() {
-  await initDatabase();
   await db.seedDemoDataIfEmpty();
 
   app.listen(PORT, () => {
@@ -651,6 +650,11 @@ async function start() {
   });
 }
 
-start().catch((err) => {
-  console.error('Failed to start server:', err);
-});
+// In Vercel serverless environment, don't start the listener
+if (process.env.VERCEL !== '1' && process.env.NODE_ENV !== 'test') {
+  start().catch((err) => {
+    console.error('Failed to start server:', err);
+  });
+}
+
+export default app;

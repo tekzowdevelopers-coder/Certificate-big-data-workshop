@@ -7,14 +7,24 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TEMPLATE_PPTX_PATH = path.join(__dirname, '../templates/Certificate RRCE (1).pptx');
-const ASSETS_DIR = path.join(__dirname, '../templates/assets');
+function getTemplatePath() {
+  const p1 = path.join(process.cwd(), 'templates/Certificate RRCE (1).pptx');
+  if (fs.existsSync(p1)) return p1;
+  return path.join(__dirname, '../templates/Certificate RRCE (1).pptx');
+}
+
+function getAssetsDir() {
+  const p1 = path.join(process.cwd(), 'templates/assets');
+  if (fs.existsSync(p1)) return p1;
+  return path.join(__dirname, '../templates/assets');
+}
 
 /**
  * Generate modified PPTX for the student
  */
 export async function generatePptxCertificate(studentName, usn) {
-  const fileData = fs.readFileSync(TEMPLATE_PPTX_PATH);
+  const templatePath = getTemplatePath();
+  const fileData = fs.readFileSync(templatePath);
   const zip = await JSZip.loadAsync(fileData);
   
   let slide1Xml = await zip.file('ppt/slides/slide1.xml').async('string');
@@ -61,17 +71,18 @@ export async function generatePdfCertificate(studentName, usn, certNumber = 'RRC
   const helveticaBold = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
 
   // Load Logos & Element Images
-  const rrceLogoBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image1.png'));
-  const tekzowLogoBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image4.jpeg'));
-  const csiLogoBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image2.jpeg'));
-  const hadoopLogoBytes = fs.readFileSync(path.join(ASSETS_DIR, 'hadoop-logo.png'));
+  const assetsDir = getAssetsDir();
+  const rrceLogoBytes = fs.readFileSync(path.join(assetsDir, 'image1.png'));
+  const tekzowLogoBytes = fs.readFileSync(path.join(assetsDir, 'image4.jpeg'));
+  const csiLogoBytes = fs.readFileSync(path.join(assetsDir, 'image2.jpeg'));
+  const hadoopLogoBytes = fs.readFileSync(path.join(assetsDir, 'hadoop-logo.png'));
   
   // Signatures
-  const sigSankarBytes = fs.readFileSync(path.join(ASSETS_DIR, 'sig-sankar.png'));
-  const sigDineshBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image7.png'));
-  const sigSivaBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image8.png'));
-  const sigSreenivasaBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image9.png'));
-  const sigBalaBytes = fs.readFileSync(path.join(ASSETS_DIR, 'image6.png'));
+  const sigSankarBytes = fs.readFileSync(path.join(assetsDir, 'sig-sankar.png'));
+  const sigDineshBytes = fs.readFileSync(path.join(assetsDir, 'image7.png'));
+  const sigSivaBytes = fs.readFileSync(path.join(assetsDir, 'image8.png'));
+  const sigSreenivasaBytes = fs.readFileSync(path.join(assetsDir, 'image9.png'));
+  const sigBalaBytes = fs.readFileSync(path.join(assetsDir, 'image6.png'));
 
   const rrceLogo = await pdfDoc.embedPng(rrceLogoBytes);
   const tekzowLogo = await pdfDoc.embedJpg(tekzowLogoBytes);
